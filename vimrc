@@ -234,6 +234,8 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " VIM-AIRPLANE settings
 set laststatus=2
+let g:airline_detect_whitespace = 0
+let g:airline_powerline_fonts = 1
 
 " Emmet-vim settings
 " enable emmet only for html, css & erb files
