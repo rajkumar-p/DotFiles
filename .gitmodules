@@ -1,0 +1,39 @@
+[submodule "gmarik/Vundle.vim"]
+    path = vim/bundle/Vundle.vim
+    url = https://github.com/gmarik/Vundle.vim.git
+[submodule "kien/ctrlp.vim"]
+    path = vim/bundle/ctrlp.vim
+    url = https://github.com/kien/ctrlp.vim.git
+[submodule "mattn/emmet-vim"]
+    path = vim/bundle/emmet-vim
+    url = https://github.com/mattn/emmet-vim.git
+[submodule "Shougo/neocomplcache.vim"]
+    path = vim/bundle/neocomplcache.vim
+    url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "Shougo/neosnippet-snippets"]
+    path = vim/bundle/neosnippet-snippets
+    url = https://github.com/Shougo/neosnippet-snippets.git
+[submodule "Shougo/neosnippet.vim"]
+    path = vim/bundle/neosnippet.vim
+    url = https://github.com/Shougo/neosnippet.vim.git
+[submodule "scrooloose/nerdcommenter"]
+    path = vim/bundle/nerdcommenter
+    url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "scrooloose/nerdtree"]
+    path = vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+[submodule "myusuf3/numbers.vim"]
+    path = vim/bundle/numbers.vim
+    url = https://github.com/myusuf3/numbers.vim.git
+[submodule "bling/vim-airline"]
+    path = vim/bundle/vim-airline
+    url = https://github.com/bling/vim-airline.git
+[submodule "jeetsukumaran/vim-buffergator"]
+    path = vim/bundle/vim-buffergator
+    url = https://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "tpope/vim-fugitive"]
+    path = vim/bundle/vim-fugitive
+    url = https://github.com/tpope/vim-fugitive.git
+[submodule "tpope/vim-surround"]
+    path = vim/bundle/vim-surround
+    url = https://github.com/tpope/vim-surround.git
