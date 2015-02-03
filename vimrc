@@ -256,4 +256,4 @@ let g:user_emmet_install_global=0
 autocmd FileType html,css,erb EmmetInstall
 
 " Copy current file location into the buffer
-nmap <leader>cl :let @*=expand("%:p")<CR>
+nmap <leader>gl :let @*=expand("%:p")<CR>
