@@ -241,3 +241,6 @@ let g:airline_powerline_fonts = 1
 " enable emmet only for html, css & erb files
 let g:user_emmet_install_global=0
 autocmd FileType html,css,erb EmmetInstall
+
+" Copy current file location into the buffer
+nmap <leader>cl :let @*=expand("%:p")<CR>
