@@ -22,54 +22,67 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L> 
 nnoremap <C-H> <C-W><C-H> 
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+" Set custom color scheme for win systems
+if has("win32")
+  syntax enable
+  colorscheme lucius
+  LuciusLight
+endif
 
-call vundle#begin()
-  " alternatively, pass a path where Vundle should install plugins
-  "call vundle#begin('~/some/path/here')
+" Set vundle path based on current platform
+if has("win32")
+  set rtp+=~/vimfiles/bundle/Vundle.vim/
+  let path='~/vimfiles/bundle'
 
-  " let Vundle manage Vundle, required
-  Plugin 'gmarik/Vundle.vim'
+  call vundle#begin(path)
+else
+  " set the runtime path to include Vundle and initialize
+  set rtp+=~/.vim/bundle/Vundle.vim
 
-  " The following are examples of different formats supported.
-  " Keep Plugin commands between vundle#begin/end.
-  " plugin on GitHub repo
-  Plugin 'tpope/vim-fugitive'
+  call vundle#begin()
+endif
 
-  " plugin from http://vim-scripts.org/vim/scripts.html
-  Plugin 'L9'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-  Plugin 'kien/ctrlp.vim'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
 
-  Plugin 'myusuf3/numbers.vim'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
 
-  Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
-  Plugin 'tpope/vim-surround'
+Plugin 'myusuf3/numbers.vim'
 
-  Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
 
-  Plugin 'Shougo/neocomplcache.vim'
+Plugin 'tpope/vim-surround'
 
-  Plugin 'Shougo/neosnippet.vim'
+Plugin 'scrooloose/nerdcommenter'
 
-  Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neocomplcache.vim'
 
-  Plugin 'bling/vim-airline'
+Plugin 'Shougo/neosnippet.vim'
 
-  Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'Shougo/neosnippet-snippets'
 
-  Plugin 'mattn/emmet-vim'
+Plugin 'bling/vim-airline'
 
-  " The sparkup vim script is in a subdirectory of this repo called vim.
-  " Pass the path to set the runtimepath properly.
-  Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'jeetsukumaran/vim-buffergator'
 
-  " Avoid a name conflict with L9
-  Plugin 'user/L9', {'name': 'newL9'}
+Plugin 'mattn/emmet-vim'
 
-  " All of your Plugins must be added before the following line
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Avoid a name conflict with L9
+Plugin 'user/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
 call vundle#end()            " required
 
 filetype plugin indent on    " required
