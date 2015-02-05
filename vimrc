@@ -5,6 +5,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set noswapfile
+
 " Removes the right hand scrollbar
 set guioptions-=r
 
@@ -27,6 +29,10 @@ if has("win32")
   syntax enable
   colorscheme lucius
   LuciusLight
+  nnoremap <C-t>  :tabnew<CR>
+  nnoremap <C-Delete>  :tabclose<CR>
+  nnoremap <C-tab>  :tabnext<CR>
+  nnoremap <C-S-tab>  :tabprevious<CR>
 endif
 
 " Set vundle path based on current platform
