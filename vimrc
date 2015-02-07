@@ -259,7 +259,7 @@ let g:airline_powerline_fonts = 1
 " Emmet-vim settings
 " enable emmet only for html, css & erb files
 let g:user_emmet_install_global=0
-autocmd FileType html,css,erb EmmetInstall
+autocmd FileType html,css,eruby EmmetInstall
 
 " Copy current file location into the buffer
 nmap <leader>gl :let @*=expand("%:p")<CR>
