@@ -263,3 +263,6 @@ autocmd FileType html,css,eruby EmmetInstall
 
 " Copy current file location into the buffer
 nmap <leader>gl :let @*=expand("%:p")<CR>
+
+" CtrlP settings
+let g:ctrlp_working_path_mode = 'ra'
