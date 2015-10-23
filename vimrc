@@ -266,3 +266,5 @@ nmap <leader>gl :let @*=expand("%:p")<CR>
 
 " CtrlP settings
 let g:ctrlp_working_path_mode = 'ra'
+
+set background=light
