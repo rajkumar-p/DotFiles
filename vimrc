@@ -5,6 +5,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set cursorline
+
 set noswapfile
 
 " Removes the right hand scrollbar
