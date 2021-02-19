@@ -27,9 +27,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L> 
 nnoremap <C-H> <C-W><C-H> 
 
+" Enable Syntax
+syntax enable
+
 " Set custom color scheme for win systems
 if has("win32")
-  syntax enable
   colorscheme lucius
   LuciusLight
   nnoremap <C-t>  :tabnew<CR>
