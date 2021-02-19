@@ -6,6 +6,7 @@ set shiftwidth=2
 set expandtab
 
 set cursorline
+set relativenumber
 
 set noswapfile
 
@@ -55,33 +56,14 @@ Plugin 'gmarik/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
-
 Plugin 'kien/ctrlp.vim'
-
-Plugin 'myusuf3/numbers.vim'
-
-Plugin 'scrooloose/nerdtree'
-
 Plugin 'tpope/vim-surround'
-
-Plugin 'scrooloose/nerdcommenter'
-
+Plugin 'tpope/vim-commentary'
 Plugin 'Shougo/neocomplcache.vim'
-
 Plugin 'Shougo/neosnippet.vim'
-
-Plugin 'Shougo/neosnippet-snippets'
-
-Plugin 'bling/vim-airline'
-
-Plugin 'jeetsukumaran/vim-buffergator'
-
-Plugin 'mattn/emmet-vim'
+Plugin 'itchyny/lightline.vim'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
