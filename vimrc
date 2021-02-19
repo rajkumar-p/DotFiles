@@ -10,6 +10,9 @@ set relativenumber
 
 set noswapfile
 
+" Add support for using Backspace in insert mode
+set backspace=indent,eol,start  " more powerful backspacing
+
 " Removes the right hand scrollbar
 set guioptions-=r
 
