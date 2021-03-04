@@ -16,6 +16,9 @@
 [submodule "tpope/vim-commentary"]
     path = vim/bundle/vim-commentary
     url = https://github.com/tpope/vim-commentary.vim.git
+[submodule "tpope/vim-sleuth"]
+    path = vim/bundle/vim-sleuth
+    url = https://github.com/tpope/vim-sleuth.vim.git
 [submodule "itchyny/lightline"]
     path = vim/bundle/vim-commentary
     url = https://github.com/itchyny/lightline.git
