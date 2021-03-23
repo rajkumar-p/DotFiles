@@ -21,7 +21,8 @@ fi
 echo "done"
 
 echo "3) Linking Dotfiles/vim to ~/.vim"
-ln -s vim $vimdir
+tolinkvimdir=$PWD/vim
+ln -s $tolinkvimdir $vimdir
 if [ $? -ne 0 ]; then
   echo "  Error linking Dotfiles/vim to ~/.vim"
   exit 1
@@ -29,7 +30,8 @@ fi
 echo "done"
 
 echo "4) Linking Dotfiles/vimrc to ~/.vimrc"
-ln -s vimrc $vimrc
+tolinkvimrc=$PWD/vimrc
+ln -s $tolinkvimrc $vimrc
 if [ $? -ne 0 ]; then
   echo "  Error linking Dotfiles/vimrc to ~/.vimrc"
   exit 1
