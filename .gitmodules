@@ -12,7 +12,7 @@
     url = https://github.com/Shougo/neosnippet.vim.git
 [submodule "tpope/vim-surround"]
     path = vim/bundle/vim-surround
-    url = https://github.com/tpope/vim-surround.vim.git
+    url = https://github.com/tpope/vim-surround
 [submodule "tpope/vim-commentary"]
     path = vim/bundle/vim-commentary
     url = https://github.com/tpope/vim-commentary.vim.git
