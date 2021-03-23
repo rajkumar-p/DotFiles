@@ -1,24 +1,24 @@
 [submodule "gmarik/Vundle.vim"]
     path = vim/bundle/Vundle.vim
-    url = https://github.com/gmarik/Vundle.vim.git
+    url = https://github.com/VundleVim/Vundle.vim
 [submodule "kien/ctrlp.vim"]
     path = vim/bundle/ctrlp.vim
-    url = https://github.com/kien/ctrlp.vim.git
+    url = https://github.com/kien/ctrlp.vim
 [submodule "Shougo/neocomplcache.vim"]
     path = vim/bundle/neocomplcache.vim
-    url = https://github.com/Shougo/neocomplcache.vim.git
+    url = https://github.com/Shougo/neocomplcache.vim
 [submodule "Shougo/neosnippet.vim"]
     path = vim/bundle/neosnippet.vim
-    url = https://github.com/Shougo/neosnippet.vim.git
+    url = https://github.com/Shougo/neosnippet.vim
 [submodule "tpope/vim-surround"]
     path = vim/bundle/vim-surround
     url = https://github.com/tpope/vim-surround
 [submodule "tpope/vim-commentary"]
     path = vim/bundle/vim-commentary
-    url = https://github.com/tpope/vim-commentary.vim.git
+    url = https://github.com/tpope/vim-commentary
 [submodule "tpope/vim-sleuth"]
     path = vim/bundle/vim-sleuth
-    url = https://github.com/tpope/vim-sleuth.vim.git
+    url = https://github.com/tpope/vim-sleuth
 [submodule "itchyny/lightline"]
-    path = vim/bundle/vim-commentary
-    url = https://github.com/itchyny/lightline.git
+    path = vim/bundle/lightline.vim
+    url = https://github.com/itchyny/lightline.vim
