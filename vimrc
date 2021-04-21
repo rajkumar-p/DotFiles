@@ -257,4 +257,7 @@ nmap <leader>gl :let @*=expand("%:p")<CR>
 " CtrlP settings
 let g:ctrlp_working_path_mode = 'ra'
 
+" Tags file. Usually you run ctags -R * to build the tags file
+set tags=tags;/
+
 set background=light
