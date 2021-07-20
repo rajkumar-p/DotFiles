@@ -1,0 +1,9 @@
+* Install patched fonts
+* Install language servers
+  - Clang (C, C++, ObjC)
+  - Python
+  - Go
+* Install diagnostic-languageserver
+  - npm install -g diagnostic-languageserver
+* Install linter for your language
+* Install languages for treesitter plugin
