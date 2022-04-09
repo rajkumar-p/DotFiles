@@ -84,7 +84,8 @@ RUN ./omz-install.sh
 WORKDIR /home/raj
 
 # Install zsh-autosuggestions
-RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # zsh settings
 RUN echo "export ZSH=\"$HOME/.oh-my-zsh\"" > /home/raj/.zshrc
@@ -95,5 +96,9 @@ RUN echo "source \$ZSH/oh-my-zsh.sh" >> /home/raj/.zshrc
 # Create .config directory
 RUN mkdir ~/.config
 
-# TODO
-# - DotFiles for neovim
+# Setup nvim
+RUN git clone https://github.com/rajkumar-p/DotFiles.git
+RUN ln -s /home/raj/DotFiles/nvim /home/raj/.config/nvim
+RUN curl -fLo /home/raj/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+RUN nvim +PlugInstall +qa
