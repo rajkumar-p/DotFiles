@@ -1,7 +1,9 @@
 * Install patched fonts
 * Install language servers
   - Clang (C, C++, ObjC)
+    [apt-get install ccls]
   - Python
+    [pip install python-language-server]
   - Go
 * Install diagnostic-languageserver
   - npm install -g diagnostic-languageserver
