@@ -23,6 +23,9 @@ RUN chown raj:raj /home/raj/
 # Install dev tools to build binaries
 RUN apt-get install build-essential -y
 
+# Install GDB
+RUN apt-get install gdb -y
+
 # Install git
 RUN apt-get install git -y
 
@@ -49,6 +52,9 @@ RUN apt-get install nodejs -y
 
 # Install npm
 RUN apt-get install npm -y
+
+# Install man pages for development tools
+RUN apt-get install manpages-dev -y
 
 # Install language/diagnostic servers
 RUN apt-get install ccls -y
