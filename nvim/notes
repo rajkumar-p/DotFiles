@@ -9,3 +9,4 @@
   - npm install -g diagnostic-languageserver
 * Install linter for your language
 * Install languages for treesitter plugin
+* Run curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

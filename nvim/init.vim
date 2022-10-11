@@ -10,6 +10,10 @@ set expandtab
 
 set noswapfile
 
+" Turn of highlighting during search
+" To toggle: set hlsearch!
+set nohlsearch
+
 hi Pmenu ctermbg=lightgreen
 hi SignColumn ctermbg=white
 
