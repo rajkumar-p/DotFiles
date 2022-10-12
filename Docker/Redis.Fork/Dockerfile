@@ -10,6 +10,6 @@ user raj
 # Clone redis.fork
 RUN mkdir /home/raj/Projects
 WORKDIR /home/raj/Projects
+RUN rm -rf redis
 RUN git clone https://github.com/rajkumar-p/redis.git
 WORKDIR /home/raj/Projects/redis
-RUN make && make test
