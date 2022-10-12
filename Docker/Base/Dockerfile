@@ -56,6 +56,9 @@ RUN apt-get install npm -y
 # Install man pages for development tools
 RUN apt-get install manpages-dev -y
 
+# Install pkg-config
+RUN apt-get install pkg-config -y
+
 # Install language/diagnostic servers
 RUN apt-get install ccls -y
 RUN pip install python-language-server
