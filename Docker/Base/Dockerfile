@@ -65,10 +65,11 @@ RUN pip install python-language-server
 RUN npm install -g diagnostic-languageserver
 
 # Install neovim
-WORKDIR /usr/src
+RUN mkdir /usr/src/nvim
+WORKDIR /usr/src/nvim
 RUN curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 RUN chmod u+x nvim.appimage
-RUN /usr/src/nvim.appimage --appimage-extract
+RUN /usr/src/nvim/nvim.appimage --appimage-extract
 RUN mv squashfs-root /
 RUN ln -s /squashfs-root/AppRun /usr/bin/nvim
 
