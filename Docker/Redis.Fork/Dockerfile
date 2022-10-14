@@ -1,10 +1,16 @@
 # Base Image - Custom Ubuntu Base
 FROM rajkumarp22/multiverse:ubuntu.base.0.0.1
 
-# Install tcl
+# User - root
 user root
+
+# Update respositories
+RUN apt-get update -y
+
+# Install tcl
 RUN apt-get install tcl -y
 
+# User - raj
 user raj
 
 # Clone redis.fork
