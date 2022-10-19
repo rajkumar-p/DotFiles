@@ -23,6 +23,9 @@ RUN chown raj:raj /home/raj/
 # Install dev tools to build binaries
 RUN apt-get install build-essential -y
 
+# Install GDB
+RUN apt-get install gdb -y
+
 # Install git
 RUN apt-get install git -y
 
@@ -50,16 +53,23 @@ RUN apt-get install nodejs -y
 # Install npm
 RUN apt-get install npm -y
 
+# Install man pages for development tools
+RUN apt-get install manpages-dev -y
+
+# Install pkg-config
+RUN apt-get install pkg-config -y
+
 # Install language/diagnostic servers
 RUN apt-get install ccls -y
 RUN pip install python-language-server
 RUN npm install -g diagnostic-languageserver
 
 # Install neovim
-WORKDIR /usr/src
+RUN mkdir /usr/src/nvim
+WORKDIR /usr/src/nvim
 RUN curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 RUN chmod u+x nvim.appimage
-RUN /usr/src/nvim.appimage --appimage-extract
+RUN /usr/src/nvim/nvim.appimage --appimage-extract
 RUN mv squashfs-root /
 RUN ln -s /squashfs-root/AppRun /usr/bin/nvim
 
