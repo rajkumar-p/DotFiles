@@ -58,4 +58,10 @@ Plug 'tpope/vim-commentary'
 " [https://github.com/tpope/vim-sleuth]
 Plug 'tpope/vim-sleuth'
 
+" catppuccin theme [https://github.com/catppuccin/nvim]
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 call plug#end()
+
+" Set color scheme to catppuccin
+colorscheme catppuccin-latte " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
