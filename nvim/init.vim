@@ -33,7 +33,7 @@ Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " [https://github.com/nvim-telescope/telescope.nvim]
-Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
@@ -45,9 +45,6 @@ Plug 'glepnir/lspsaga.nvim'
 
 " [https://github.com/nvim-treesitter/nvim-treesitter]
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-" [https://github.com/nvim-lua/completion-nvim]
-Plug 'nvim-lua/completion-nvim'
 
 " [https://github.com/tpope/vim-surround]
 Plug 'tpope/vim-surround'
@@ -65,3 +62,6 @@ call plug#end()
 
 " Set color scheme to catppuccin
 colorscheme catppuccin-latte " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
+" Set clipboard
+set clipboard+=unnamedplus
