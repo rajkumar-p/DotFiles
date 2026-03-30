@@ -1,7 +1,8 @@
 theme = "Catppuccin Latte"
 font-family = "Fira Code"
-font-size = 18
+font-size = 19
 cursor-style = block
 cursor-color = 5D5F75
 cursor-style-blink = false
-shell-integration-features = no-cursor,sudo
+shell-integration-features = no-cursor,sudo,ssh-terminfo,ssh-env
+macos-option-as-alt = true
