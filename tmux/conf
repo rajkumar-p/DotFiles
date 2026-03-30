@@ -1,0 +1,16 @@
+set-option -g set-titles on
+set-option -g set-titles-string "#S / #W"
+
+set -g mouse on
+
+# Theme as below
+set -g status-style "bg=#F06060,fg=#cdd6f4"
+set -g status-left "#[fg=#5C4B51,bold] #S "
+set -g window-status-format "#[fg=#F2EBBF] #I: #W "
+set -g window-status-current-format "#[fg=black,bg=#F3B562] #I: #W "
+set -g status-right "#[fg=#5C4B51]%a %b %d #[fg=#5C4B51]%H:%M"
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+# Uncomment when you have tpm installed
+# To install TPM - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# run '~/.tmux/plugins/tpm/tpm'
